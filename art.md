@@ -47,11 +47,11 @@ inline long long rd() {
   return x;
 }
 char pbuf[MYBUF], *pp = pbuf;
-void pc(const char &c) {
+inline void pc(const char &c) {
   if (pp - pbuf == MYBUF) fwrite(pbuf, 1, MYBUF, stdout), pp = pbuf;
   *pp++ = c;
 }
-void wt(long long x) {
+inline void wt(long long x) {
   static int sta[35];
   int top = 0;
   do {
